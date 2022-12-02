@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div id="sec">
+        <p id="title">Bem Vindo!</p>
+        <p id="sub">Faça Login ao lado ou</p>
+        <button class="modal" onclick = "abrirModal()">Crie sua conta</button>
+    <dialog>
+        <button class="fechar" onclick = "fecharModal()">❌</button>
+        <label>Criar Conta</label>
+        <input class="nome" type="text" value="Nome">
+        <input class="bio" type="text" name="bio" value="Descrição">
+        <input class="email" type="text" name="email" value="Email">
+        <input class="senha" type="text" name="senha" value="Senha">
+        <button class="ok">OK</button>
+    </dialog>
+    </div>
+    <div>
+        <div class="form">
+            <input id="user" type="text" placeholder="Email">
+            <input id="psw" type="password" placeholder="Senha">
+            <button onClick="login()">Login</button>
+        </div>
+    </div>
+</body>
+<script src="./script.js"></script>
+</html>

@@ -5,11 +5,13 @@ USE forum;
 
 CREATE TABLE usuarios(
     id_usuario INTEGER PRIMARY KEY AUTO_INCREMENT,
+    tipo VARCHAR(15) NOT NULL,
+    email VARCHAR(50) NOT NULL,
+    senha VARCHAR(100) NOT NULL,
     nome VARCHAR(50) NOT NULL,
     nome_usuario VARCHAR(50) NOT NULL,
-    email VARCHAR(50) NOT NULL,
-    biografia VARCHAR(600) NOT NULL,
-    foto_perfil LONGBLOB NOT NULL
+    foto_perfil LONGBLOB NOT NULL,
+    biografia VARCHAR(600) NOT NULL
 );
 
 CREATE TABLE categorias(
