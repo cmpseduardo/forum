@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ﻿id_usuario;email;senha;nome;nume_usuario;biografia
 1;jorgerafael@gmail.com;1234;Jorge Rafael;jorge456;Tenho interesse em ervas e cristais.
 2;carlosdrummond@gmail.com;5678;Carlos Drummond;carlosddd;Gosto bastante de fadas.
@@ -5,3 +6,12 @@
 4;gabrielgabriel@gmail.com;8963;Gabriel Silvano;silvagabriel;Procurando por alguém para me orientar.
 5;pauloandrade@gmail.com;gatingatin;Paulo Andrade;thepaulo;Amo gatos.
 6;shaolin@gmail.com;porco;Shaolin Yu Hwang;shaoshao;O mundo, o tudo, o nada.
+=======
+﻿id_usuario;email;senha;nome;nume_usuario;biografia
+1;jorgerafael@gmail.com;1234;Jorge Rafael;jorge456;Tenho interesse em ervas e cristais.
+2;carlosdrummond@gmail.com;5678;Carlos Drummond;carlosddd;Gosto bastante de fadas.
+3;hugosantos@gmail.com;7456;Hugos Santos;hugo.s;Apenas um forasteiro, um viajante.
+4;gabrielgabriel@gmail.com;8963;Gabriel Silvano;silvagabriel;Procurando por alguém para me orientar.
+5;pauloandrade@gmail.com;gatingatin;Paulo Andrade;thepaulo;Amo gatos.
+6;shaolin@gmail.com;porco;Shaolin Yu Hwang;shaoshao;O mundo, o tudo, o nada.
+>>>>>>> 7161e988cadbb839e77d4ac4a8c698b647a8cc14
