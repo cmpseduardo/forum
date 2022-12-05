@@ -1,19 +1,19 @@
 const toCreate = (model) => {
-    return `INSERT INTO Categorias VALUE (default,'${model.nome_categoria}'`;
+    return `INSERT INTO postagens VALUES (DEFAULT, ${model.id_usuario}, '${model.titulo}', '${model.conteudo}', ${model.id_categoria}, ${model.curtidas})`;
 }
 
 const toRead = (model) => {
-    return 'SELECT * FROM Categorias';
+    return 'SELECT * FROM postagens';
 }
 
 const toUpdate = (model) => {
-    return `UPDATE Categorias SET 
-    nome = '${model.nome_categoria}',
-    WHERE id_categoria = '${model.id_categoria}'`;
+    return `UPDATE postagens SET 
+    titulo = '${model.titulo}', conteudo = '${model.conteudo}'
+    WHERE id_postagem = ${model.id_postagem}`;
 }
 
 const toDelete = (model) => {
-    return `DELETE FROM Categorias WHERE id_categoria = '${model.id_categoria}'`;
+    return `DELETE FROM postagens WHERE id_postagem = ${model.id_postagem}`;
 }
 
 module.exports = {

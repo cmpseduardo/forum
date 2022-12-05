@@ -1,0 +1,7 @@
+﻿id_postagem;id_usuario;titulo;conteudo;id_categoria;curtidas
+1;3;Frase Khalil Gibran;"""A neve e as tempestades matam as flores, mas nada podem contra as sementes.""";1;256
+2;4;Tiragem Oracular;Estou tirando tarot. Chamar inbox.;5;10
+3;1;Oi gente;Oi gente. Sou novo aqui. Tudo bem com vcs? :D;7;1
+4;2;Qual cristal devo usar?;Qual cristal devo usar para melhorar meus estudos?;2;5
+5;3;Como descobrir meu animal de poder?;Gente, como faço para descobrir meu animal de poder?;2;6
+6;3;Obrigado!;Consegui descobrir meu animal de poder. Obrigado gente!;7;5

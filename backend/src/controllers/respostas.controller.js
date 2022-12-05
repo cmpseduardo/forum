@@ -1,4 +1,4 @@
-const con = require('./../../index.js');
+const con = require('./../models/DAO');
 const Resposta = require('../models/Resposta.js');
 
 const listarRespostas = (req, res) => {

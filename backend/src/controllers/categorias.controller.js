@@ -1,4 +1,4 @@
-const con = require('./../../index.js');
+const con = require('./../models/DAO');
 const Categoria = require('../models/Categoria.js');
 
 const listarCategorias = (req, res) => {

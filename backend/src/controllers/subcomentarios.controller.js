@@ -1,4 +1,4 @@
-const con = require('./../../index.js');
+const con = require('./../models/DAO');
 const Subcomentario = require('../models/Subcomentario.js');
 
 const listarSubcomentarios = (req, res) => {

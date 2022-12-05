@@ -1,4 +1,4 @@
-const con = require('./../../index.js');
+const con = require('./../models/DAO');
 const Postagem = require('../models/Postagem.js');
 
 const listarPostagens = (req, res) => {

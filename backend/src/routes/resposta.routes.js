@@ -3,9 +3,9 @@ const router = express.Router()
 
 const Resposta = require("../controllers/respostas.controller")
 
-router.get("/read", Resposta.readAll)
-router.post("/create", Resposta.create)
-router.put("/update", Resposta.update)
-router.delete("/delete/:id", Resposta.del)
+router.get("/read", Resposta.listarRespostas)
+router.post("/create", Resposta.cadastrarRespostas)
+router.put("/update", Resposta.alterarRespostas)
+router.delete("/delete/:id_resposta", Resposta.excluirRespostas)
 
 module.exports = router
