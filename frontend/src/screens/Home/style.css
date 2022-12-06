@@ -7,37 +7,78 @@
 }
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: rgb(108, 87, 128); 
+    background-color: rgb(241, 241, 241); 
 }
 p {
-    color: white;
+    color: rgb(0, 0, 0);
 }
 #logo{
-    width: 150px;
+    width: 100px;
+    height: 100px;
     display: flex;
-    justify-content: left;
-    margin: 10px;
-    margin-top: -3%;
 }
 .navbar{
     display: flex;
-    justify-content: right;
-    margin-top: 30px;
+    height: 120px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
     font-style: normal;
-    margin-right: 80px;
-    gap: 20px;
+    gap: 30px;
+    background-color: white;
 }
 .navbar-item{
     text-decoration: none; 
 }
 .categorias{
-    width: 25%;
+    width: 10%;
     height: 100%;
     margin-top: 30px;
     background-color: #ffffff6b;
     border-radius: 5%;
-    padding: 10px;
+    padding: 30px;
 }
 .item{
     display: flex;
+}
+
+main{
+    display: flex;
+}
+
+.feed{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.post{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+    width: 600px;
+    background-color: white;
+    margin: 20px;
+    padding: 20px;
+
+}
+
+.post > #usuario-user{
+}
+
+.inferior-post{
+    display: flex;
+    border-top: 1px solid rgb(199, 199, 199);
+    margin-top: 10px;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.inferior-post > button{
+    height: 20px;
+    width: 100px;
+    margin-top: 15px;
 }

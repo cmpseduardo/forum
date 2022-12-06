@@ -52,39 +52,39 @@ DESCRIBE subcomentarios;
 SHOW TABLES;
 
 
-LOAD DATA INFILE 'C:/Users/Desenvolvimento/Desktop/forum-main/docs/dados/usuarios.csv'
+LOAD DATA INFILE 'C:/Users/campo/Desktop/forum-main/docs/dados/usuarios.csv'
 INTO TABLE usuarios
 FIELDS TERMINATED BY ';'
 ENCLOSED BY '"'
-LINES TERMINATED BY '\r\n'
+LINES TERMINATED BY '\n'
 IGNORE 1 ROWS;
 
-LOAD DATA INFILE 'C:/Users/Desenvolvimento/Desktop/forum-main/docs/dados/categorias.csv'
+LOAD DATA INFILE 'C:/Users/campo/Desktop/forum-main/docs/dados/categorias.csv'
 INTO TABLE categorias
 FIELDS TERMINATED BY ';'
 ENCLOSED BY '"'
-LINES TERMINATED BY '\r\n'
+LINES TERMINATED BY '\n'
 IGNORE 1 ROWS;
 
-LOAD DATA INFILE 'C:/Users/Desenvolvimento/Desktop/forum-main/docs/dados/postagens.csv'
+LOAD DATA INFILE 'C:/Users/campo/Desktop/forum-main/docs/dados/postagens.csv'
 INTO TABLE postagens
 FIELDS TERMINATED BY ';'
 ENCLOSED BY '"'
-LINES TERMINATED BY '\r\n'
+LINES TERMINATED BY '\n'
 IGNORE 1 ROWS;
 
-LOAD DATA INFILE 'C:/Users/Desenvolvimento/Desktop/forum-main/docs/dados/respostas.csv'
+LOAD DATA INFILE 'C:/Users/campo/Desktop/forum-main/docs/dados/postagens.csv'
 INTO TABLE respostas
 FIELDS TERMINATED BY ';'
 ENCLOSED BY '"'
-LINES TERMINATED BY '\r\n'
+LINES TERMINATED BY '\n'
 IGNORE 1 ROWS;
 
-LOAD DATA INFILE 'C:/Users/Desenvolvimento/Desktop/forum-main/docs/dados/subcomentarios.csv'
+LOAD DATA INFILE 'C:/Users/campo/Desktop/forum-main/docs/dados/subcomentarios.csv'
 INTO TABLE subcomentarios
 FIELDS TERMINATED BY ';'
 ENCLOSED BY '"'
-LINES TERMINATED BY '\r\n'
+LINES TERMINATED BY '\n'
 IGNORE 1 ROWS;
 
 CREATE VIEW vw_respostas AS 
