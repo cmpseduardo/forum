@@ -1,5 +1,5 @@
 const toCreate = (model) => {
-    return `INSERT INTO usuarios VALUES (DEFAULT, '${model.tipo}', '${model.email}', '${model.senha}', '${model.nome}', '${model.nome_usuario}', '${model.biografia}')`;
+    return `INSERT INTO usuarios VALUES (DEFAULT, 'USER', '${model.email}', '${model.senha}', '${model.nome}', '${model.nome_usuario}', 'Eu estou usando o Mystic!'`;
 }
 
 const toRead = (model) => {

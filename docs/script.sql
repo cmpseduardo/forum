@@ -13,9 +13,20 @@ CREATE TABLE usuarios(
     biografia VARCHAR(600) NOT NULL
 );
 
+CREATE TABLE seguidores(
+    seguindo INTEGER NOT NULL,
+    seguido INTEGER NOT NULL
+);
+
 CREATE TABLE categorias(
     id_categoria INTEGER PRIMARY KEY AUTO_INCREMENT,
     nome_categoria VARCHAR(30) NOT NULL
+);
+
+CREATE TABLE subcategorias(
+    id_categoria INTEGER NOT NULL,
+    id_subcategoria INTEGER PRIMARY KEY AUTO_INCREMENT,
+    
 );
 
 CREATE TABLE postagens(
@@ -28,11 +39,25 @@ CREATE TABLE postagens(
     FOREIGN KEY (id_usuario) REFERENCES usuarios(id_usuario)
 );
 
+CREATE TABLE curtidas_postagens(
+    id_postagem INTEGER NOT NULL,
+    id_usuario INTEGER NOT NULL,
+    FOREIGN KEY (id_postagem) REFERENCES postagens(id_postagem),
+    FOREIGN KEY (id_usuario) REFERENCES usuarios(id_usuario)
+);
+
 CREATE TABLE respostas(
     id_resposta INTEGER PRIMARY KEY AUTO_INCREMENT,
     id_postagem INTEGER NOT NULL,
     comentario VARCHAR(1000),
     FOREIGN KEY (id_postagem) REFERENCES postagens(id_postagem)
+);
+
+CREATE TABLE curtidas_respostas(
+    id_resposta INTEGER NOT NULL,
+    id_usuario INTEGER NOT NULL,
+    FOREIGN KEY (id_resposta) REFERENCES respostas(id_resposta),
+    FOREIGN KEY (id_usuario) REFERENCES usuarios(id_usuario)
 );
 
 CREATE TABLE subcomentarios(
@@ -44,11 +69,22 @@ CREATE TABLE subcomentarios(
     FOREIGN KEY (id_postagem) REFERENCES postagens(id_postagem)
 );
 
+
+CREATE TABLE curtidas_subcomentarios(
+    id_subcomentario INTEGER NOT NULL,
+    id_usuario INTEGER NOT NULL,
+    FOREIGN KEY (id_subcomentario) REFERENCES subcomentarios(id_subcomentario),
+    FOREIGN KEY (id_usuario) REFERENCES usuarios(id_usuario)
+);
+
 DESCRIBE usuarios;
 DESCRIBE categorias;
 DESCRIBE postagens;
 DESCRIBE respostas;
 DESCRIBE subcomentarios;
+DESCRIBE curtidas_postagens;
+DESCRIBE curtidas_respostas;
+DESCRIBE curtidas_subcomentarios;
 SHOW TABLES;
 
 
@@ -56,35 +92,35 @@ LOAD DATA INFILE 'C:/Users/Desenvolvimento/Desktop/forum-main/docs/dados/usuario
 INTO TABLE usuarios
 FIELDS TERMINATED BY ';'
 ENCLOSED BY '"'
-LINES TERMINATED BY '\r\n'
+LINES TERMINATED BY '\n'
 IGNORE 1 ROWS;
 
 LOAD DATA INFILE 'C:/Users/Desenvolvimento/Desktop/forum-main/docs/dados/categorias.csv'
 INTO TABLE categorias
 FIELDS TERMINATED BY ';'
 ENCLOSED BY '"'
-LINES TERMINATED BY '\r\n'
+LINES TERMINATED BY '\n'
 IGNORE 1 ROWS;
 
 LOAD DATA INFILE 'C:/Users/Desenvolvimento/Desktop/forum-main/docs/dados/postagens.csv'
 INTO TABLE postagens
 FIELDS TERMINATED BY ';'
 ENCLOSED BY '"'
-LINES TERMINATED BY '\r\n'
+LINES TERMINATED BY '\n'
 IGNORE 1 ROWS;
 
 LOAD DATA INFILE 'C:/Users/Desenvolvimento/Desktop/forum-main/docs/dados/respostas.csv'
 INTO TABLE respostas
 FIELDS TERMINATED BY ';'
 ENCLOSED BY '"'
-LINES TERMINATED BY '\r\n'
+LINES TERMINATED BY '\n'
 IGNORE 1 ROWS;
 
 LOAD DATA INFILE 'C:/Users/Desenvolvimento/Desktop/forum-main/docs/dados/subcomentarios.csv'
 INTO TABLE subcomentarios
 FIELDS TERMINATED BY ';'
 ENCLOSED BY '"'
-LINES TERMINATED BY '\r\n'
+LINES TERMINATED BY '\n'
 IGNORE 1 ROWS;
 
 CREATE VIEW vw_respostas AS 

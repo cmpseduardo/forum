@@ -1,0 +1,20 @@
+Categorias e Subcategorias
+1- Estudos:
+        Meditação, livros, cristais, rituais, velas;
+
+2- Dúvidas:
+        Meditação, livros, cristais, rituais, velas;
+
+3- Eventos:
+        Mystic Fair, Encontro de Magos e Bruxas de Paranapiacaba;
+
+4- DIY:
+        Varinhas, velas, amuletos, talismãs;
+
+5- Serviços:
+        Leitura runas, leitura tarot, leitura búzios;
+
+6- Produtos:
+        Cristais, ervas, estátuas, bonecos;
+
+7- Outros.

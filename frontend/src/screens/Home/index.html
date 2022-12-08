@@ -5,26 +5,43 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="index.js" defer></script>
     <title>Mystic - Home</title>
 </head>
 <body>
     <header>
         <nav class="navbar">
+            <a class="navbar-item" href="./../Recomendacoes/index.html">Categorias</a>
             <a class="navbar-item" href="./../Recomendacoes/index.html">Recomendações</a>
+            <img src="../../../../docs/imgs/logo.png" id="logo" alt="logo">
             <a class="navbar-item" href="./../Meuperfil/index.html">Meu perfil</a>
+            <p class="navbar-item">Sobre</p>
+            <p id="ola-user">Olá, user!</p>
         </nav>
-        <img src="https://github.com/cmpseduardo/forum/blob/main/docs/Nova%20pasta/logo.png?raw=true" id="logo" alt="logo">
-        <div class="categorias">
-            <a class="titulo">Categorias:</a>
-            <a class="item" href="https://github.com/wellifabio/senai2022/blob/master/2des/pwfe/aula10/correcao_ex09/login/script.js">Dúvidas</a>
-            <a class="item" href="https://github.com/wellifabio/senai2022/blob/master/2des/pwfe/aula10/correcao_ex09/login/script.js">Cristais</a>
-            <a class="item" href="https://github.com/wellifabio/senai2022/blob/master/2des/pwfe/aula10/correcao_ex09/login/script.js">Recomendações</a>
-            <a class="item" href="https://github.com/wellifabio/senai2022/blob/master/2des/pwfe/aula10/correcao_ex09/login/script.js">Recomendações</a>
-            <a class="item" href="https://github.com/wellifabio/senai2022/blob/master/2des/pwfe/aula10/correcao_ex09/login/script.js">Recomendações</a>
-        </div>
     </header>
     <main>
-        
+        <aside class="categorias">
+            <ul>
+                <p class="titulo">Categorias:</p>
+                <li class="item"><a href="https://github.com/wellifabio/senai2022/blob/master/2des/pwfe/aula10/correcao_ex09/login/script.js">Dúvidas</a></li>
+                <li class="item"><a href="https://github.com/wellifabio/senai2022/blob/master/2des/pwfe/aula10/correcao_ex09/login/script.js">Cristais</a></li>
+                <li class="item"><a href="https://github.com/wellifabio/senai2022/blob/master/2des/pwfe/aula10/correcao_ex09/login/script.js">Recomendações</a></li>
+                <li class="item"><a href="https://github.com/wellifabio/senai2022/blob/master/2des/pwfe/aula10/correcao_ex09/login/script.js">Recomendações</a></li>
+                <li class="item"><a href="https://github.com/wellifabio/senai2022/blob/master/2des/pwfe/aula10/correcao_ex09/login/script.js">Recomendações</a></li>
+            </ul>
+        </aside>
+
+        <div class="feed">
+            <div class="post model">
+                <p>Categoria</p>
+                <p id="usuario-user">NomeUser</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit quas eveniet corporis quis ea facere autem eos, expedita blanditiis fugiat nisi, placeat cum, dolores alias. Quasi harum voluptates nam iusto.</p>
+                <div class="inferior-post">
+                    <button>Curtir</button>
+                    <button>Comentar</button>
+                    <button>Favoritar</button>
+                </div>
+        </div>
     </main>
 </body>
 </html>
