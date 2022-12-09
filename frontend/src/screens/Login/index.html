@@ -12,14 +12,16 @@
         <p id="title">Bem Vindo!</p>
         <p id="sub">Faça Login ao lado ou</p>
         <button class="modal" onclick = "abrirModal()">Crie sua conta</button>
-    <dialog>
+        <dialog>
+            <label>Criar Conta</label>
         <button class="fechar" onclick = "fecharModal()">❌</button>
-        <label>Criar Conta</label>
-        <input class="nome" type="text" value="Nome">
-        <input class="bio" type="text" name="bio" value="Descrição">
-        <input class="email" type="text" name="email" value="Email">
-        <input class="senha" type="text" name="senha" value="Senha">
-        <button class="ok">OK</button>
+
+        <input id="email-user" placeholder="Digite seu e-mail" type="text">
+        <input id="senha-user" placeholder="Digite sua senha" type="text">
+        <input id="nome-user" placeholder="Digite seu nome" type="text">
+        <input id="usuario-user" placeholder="Crie um nome de usuário" type="text">
+
+        <button class="ok" onclick="cadastrarUsuario()">OK</button>
     </dialog>
     </div>
     <div>

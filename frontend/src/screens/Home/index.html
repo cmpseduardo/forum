@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,7 +9,8 @@
     <script src="index.js" defer></script>
     <title>Mystic - Home</title>
 </head>
-<body>
+
+<body onload="carregar()">
     <header>
         <nav class="navbar">
             <a class="navbar-item" href="./../Recomendacoes/index.html">Categorias</a>
@@ -23,25 +25,46 @@
         <aside class="categorias">
             <ul>
                 <p class="titulo">Categorias:</p>
-                <li class="item"><a href="https://github.com/wellifabio/senai2022/blob/master/2des/pwfe/aula10/correcao_ex09/login/script.js">Dúvidas</a></li>
-                <li class="item"><a href="https://github.com/wellifabio/senai2022/blob/master/2des/pwfe/aula10/correcao_ex09/login/script.js">Cristais</a></li>
-                <li class="item"><a href="https://github.com/wellifabio/senai2022/blob/master/2des/pwfe/aula10/correcao_ex09/login/script.js">Recomendações</a></li>
-                <li class="item"><a href="https://github.com/wellifabio/senai2022/blob/master/2des/pwfe/aula10/correcao_ex09/login/script.js">Recomendações</a></li>
-                <li class="item"><a href="https://github.com/wellifabio/senai2022/blob/master/2des/pwfe/aula10/correcao_ex09/login/script.js">Recomendações</a></li>
+                <li class="item"><a
+                        href="https://github.com/wellifabio/senai2022/blob/master/2des/pwfe/aula10/correcao_ex09/login/script.js">Dúvidas</a>
+                </li>
+                <li class="item"><a
+                        href="https://github.com/wellifabio/senai2022/blob/master/2des/pwfe/aula10/correcao_ex09/login/script.js">Cristais</a>
+                </li>
+                <li class="item"><a
+                        href="https://github.com/wellifabio/senai2022/blob/master/2des/pwfe/aula10/correcao_ex09/login/script.js">Recomendações</a>
+                </li>
+                <li class="item"><a
+                        href="https://github.com/wellifabio/senai2022/blob/master/2des/pwfe/aula10/correcao_ex09/login/script.js">Recomendações</a>
+                </li>
+                <li class="item"><a
+                        href="https://github.com/wellifabio/senai2022/blob/master/2des/pwfe/aula10/correcao_ex09/login/script.js">Recomendações</a>
+                </li>
             </ul>
         </aside>
 
         <div class="feed">
             <div class="post model">
-                <p>Categoria</p>
-                <p id="usuario-user">NomeUser</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit quas eveniet corporis quis ea facere autem eos, expedita blanditiis fugiat nisi, placeat cum, dolores alias. Quasi harum voluptates nam iusto.</p>
-                <div class="inferior-post">
-                    <button>Curtir</button>
-                    <button>Comentar</button>
-                    <button>Favoritar</button>
+                <!-- <div class="alinhamento-categoria">
+                </div> -->
+                <div id="alegria">
+                    <span id="usuario-user">NomeUser</span>
+                    <span id="categoria">Categoria</span>
                 </div>
-        </div>
+                <h3 id="titulo-postagem">Título Postagem</h3>
+                <p id="conteudo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit quas eveniet corporis
+                    quis ea facere autem eos, expedita blanditiis fugiat nisi, placeat cum, dolores alias. Quasi harum
+                    voluptates nam iusto.</p>
+                <div class="inferior-post">
+                    <button class="btn-post btn-curtir"><img
+                            src="https://cdn-icons-png.flaticon.com/512/2961/2961957.png" /></button>
+                    <button class="btn-post btn-comentar"><img
+                            src="https://cdn-icons-png.flaticon.com/512/2549/2549871.png" /></button>
+                    <button class="btn-post btn-favoritar"><img
+                            src="https://cdn-icons-png.flaticon.com/512/5948/5948594.png" /></button>
+                </div>
+            </div>
     </main>
 </body>
+
 </html>
