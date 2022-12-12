@@ -3,7 +3,8 @@ const toCreate = (model) => {
 }
 
 const toRead = (model) => {
-    return 'SELECT * FROM respostas';
+    return 'SELECT * FROM vw_respostas';
+    // return 'SELECT postagens.*, usuarios.nome_usuario, categorias.nome_categoria FROM postagens INNER JOIN categorias ON categorias.id_categoria = postagens.id_categoria INNER JOIN usuarios ON usuarios.id_usuario = postagens.id_usuario';
 }
 
 const toUpdate = (model) => {

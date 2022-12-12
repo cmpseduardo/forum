@@ -3,7 +3,7 @@ const toCreate = (model) => {
 }
 
 const toRead = (model) => {
-    return 'SELECT * FROM subcomentarios';
+    return 'SELECT * FROM vw_respostas';
 }
 
 const toUpdate = (model) => {

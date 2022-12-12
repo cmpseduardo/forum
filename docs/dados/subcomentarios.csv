@@ -1,7 +1,8 @@
-﻿id_subcomentario;id_postagem;id_resposta;subcomentario
-1;1;1;Sim!
-2;2;2;Vou te chamar inbox.
-3;3;3;Obrigado!
-4;4;4;Muito obrigado pela dica!
-5;5;5;Certo! Gratidão
-6;6;6;Siiimmm!
+﻿id_subcomentario;id_resposta;id_usuario;subcomentario
+1;1;6;Sim!
+2;2;5;Vou te chamar inbox.
+3;3;4;Obrigado!
+4;4;3;Muito obrigado pela dica!
+5;5;2;Certo! Gratidão
+6;6;1;Siiimmm!
+7;1;5;UAU explodiu meu conhecimento noooossa meo

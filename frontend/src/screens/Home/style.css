@@ -106,7 +106,7 @@ main{
     right: 2px;
 }
 
-#alegria{
+#post-superior{
     width: 100%;
     display: flex;
     align-items: center;
@@ -145,6 +145,45 @@ main{
     margin-top: 15px;
 }
 
+
+.comentario-post{
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+    gap: 25px;
+}
+
+#digite-comentario{
+    width: 500px;
+    padding: 10px;
+    border-radius: 50px;
+    border: 0.5px solid grey;
+}
+
+#enviar-comentario{
+    background: none;
+    border: none;
+}
+
+#enviar-comentario > img{
+    height: 30px;
+    width: 30px;
+}
+
+.comentario-linha{
+    margin-top: 10px;
+    font-size: 13px;
+    border: 1px solid #e4e4e4;
+    padding: 10px;
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.comentario-linha > p{
+    margin-left: 5px;
+    word-wrap: break-word;
+}
 
 .model{
     display: none;

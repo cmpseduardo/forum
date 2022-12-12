@@ -49,8 +49,10 @@ CREATE TABLE curtidas_postagens(
 CREATE TABLE respostas(
     id_resposta INTEGER PRIMARY KEY AUTO_INCREMENT,
     id_postagem INTEGER NOT NULL,
+    id_usuario INTEGER NOT NULL,
     comentario VARCHAR(1000),
-    FOREIGN KEY (id_postagem) REFERENCES postagens(id_postagem)
+    FOREIGN KEY (id_postagem) REFERENCES postagens(id_postagem),
+    FOREIGN KEY (id_usuario) REFERENCES usuarios(id_usuario)
 );
 
 CREATE TABLE curtidas_respostas(
@@ -62,11 +64,11 @@ CREATE TABLE curtidas_respostas(
 
 CREATE TABLE subcomentarios(
     id_subcomentario INTEGER PRIMARY KEY AUTO_INCREMENT,
-    id_postagem INTEGER NOT NULL,
     id_resposta INTEGER NOT NULL,
+    id_usuario INTEGER NOT NULL,
     subcomentario VARCHAR(1000) NOT NULL,
     FOREIGN KEY (id_resposta) REFERENCES respostas(id_resposta),
-    FOREIGN KEY (id_postagem) REFERENCES postagens(id_postagem)
+    FOREIGN KEY (id_usuario) REFERENCES usuarios(id_usuario)
 );
 
 
@@ -123,8 +125,9 @@ ENCLOSED BY '"'
 LINES TERMINATED BY '\n'
 IGNORE 1 ROWS;
 
-CREATE VIEW vw_respostas AS 
-SELECT p.id_postagem AS id_post, p.titulo, p.conteudo, r.id_resposta AS id_resp, r.comentario, s.id_subcomentario, s.subcomentario
-FROM respostas r
-INNER JOIN postagens p ON p.id_postagem = r.id_postagem
-INNER JOIN subcomentarios s on s.id_resposta = r.id_resposta;
+CREATE VIEW vw_respostas
+AS
+SELECT respostas.*, usuarios.nome, nova.nome as nome_sub, nova.subcomentario FROM respostas
+INNER JOIN usuarios ON respostas.id_usuario = usuarios.id_usuario
+INNER JOIN (SELECT subcomentarios.*, usuarios.nome FROM subcomentarios INNER JOIN usuarios ON subcomentarios.id_usuario = usuarios.id_usuario) AS nova ON nova.id_resposta = respostas.id_resposta;
+
